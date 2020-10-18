@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyD3OTCqy4dPET56NxC-fY4d9pdb8aKzAy0",
+                authDomain: "ninja-firestore-tut-a8b8a.firebaseapp.com",
+                databaseURL: "https://ninja-firestore-tut-a8b8a.firebaseio.com",
+                projectId: "ninja-firestore-tut-a8b8a",
+                storageBucket: "ninja-firestore-tut-a8b8a.appspot.com",
+                messagingSenderId: "878765324036",
+                appId: "1:878765324036:web:5b9d9063e907628cd44251"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
